@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <title>送信完了 | サンプル株式会社</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">サンプル会社</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#">会社情報 <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">採用情報</a>
+          <a class="nav-item nav-link active" href="#">お問い合わせ</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <h1 class="mt-4 pb-4 border-bottom">送信完了</h1>
+    <p>ありがとうございました。送信を受け付けました。</p>
+    <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
+
+    <div class="row">
+      <div class="col-md">
+        <h2>送信内容</h2>
+        <table class="table">
+          <tr class="row m-0">
+            <th class="d-inline-block col-3">会社名</th>
+            <td class="d-inline-block col-9"><%= params['company'] %></td>
+          </tr>
+          <tr class="row m-0">
+            <th class="d-inline-block col-3">氏名</th>
+            <td class="d-inline-block col-9"><%= params['name'] %></td>
+          </tr>
+          <tr class="row m-0">
+            <th class="d-inline-block col-3">メール</th>
+            <td class="d-inline-block col-9"><%= params['mail'] %></td>
+          </tr>
+          <tr class="row m-0">
+            <th class="d-inline-block col-3">電話番号</th>
+            <td class="d-inline-block col-9"><%= params['tel'] %></td>
+          </tr>
+          <tr class="row m-0">
+            <th class="d-inline-block col-3">内容</th>
+            <td class="d-inline-block col-9"><%= params['content'] %></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="text-center mb-4">
+      <a href="/" class="btn btn-success" role="button">戻る</a>
+    </div>
+  </div>
+  <footer class="text-center pt-3 border-top">
+    &copy; 2018 SAMPLE Inc.
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+</body>
+
+</html>
